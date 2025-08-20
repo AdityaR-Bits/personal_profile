@@ -2,7 +2,7 @@
 
 A modern, responsive personal profile website showcasing my professional experience, skills, and projects. Built with HTML, CSS, and JavaScript for optimal performance and user experience.
 
-## 🌟 Features
+## Features
 
 - **Modern Design**: Clean, professional design with smooth animations
 - **Responsive Layout**: Fully responsive design that works on all devices
@@ -10,12 +10,12 @@ A modern, responsive personal profile website showcasing my professional experie
 - **Professional Sections**: Hero, About, Experience, Projects, Skills, and Contact
 - **GitHub Pages Ready**: Optimized for deployment on GitHub Pages
 
-## 🚀 Live Demo
+## Live Demo
 
 The website is designed to be hosted on GitHub Pages. Once deployed, it will be accessible at:
 `https://[your-username].github.io/[repository-name]`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 personal_profile/
@@ -25,7 +25,7 @@ personal_profile/
 └── README.md           # This file
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5**: Semantic markup and structure
 - **CSS3**: Modern styling with Flexbox and Grid
@@ -33,7 +33,7 @@ personal_profile/
 - **Font Awesome**: Icons for social links and UI elements
 - **Google Fonts**: Inter font family for modern typography
 
-## 📱 Sections
+## Sections
 
 ### 1. Hero Section
 - Professional introduction with call-to-action buttons
@@ -66,7 +66,7 @@ personal_profile/
 - Direct links to professional profiles
 - Professional networking information
 
-## 🚀 Deployment Instructions
+## Deployment Instructions
 
 ### Option 1: GitHub Pages (Recommended)
 
@@ -113,7 +113,7 @@ personal_profile/
    php -S localhost:8000
    ```
 
-## 🎨 Customization
+## Customization
 
 ### Personal Information
 - Update personal details in `index.html`
@@ -130,7 +130,7 @@ personal_profile/
 - Update project descriptions and links
 - Modify skill categories and items
 
-## 📱 Responsive Design
+## Responsive Design
 
 The website is fully responsive and includes:
 - Mobile-first design approach
@@ -138,7 +138,7 @@ The website is fully responsive and includes:
 - Touch-friendly navigation
 - Optimized layouts for all screen sizes
 
-## 🔧 Browser Support
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
@@ -146,7 +146,7 @@ The website is fully responsive and includes:
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 📈 Performance Features
+## Performance Features
 
 - Optimized CSS with efficient selectors
 - Minimal JavaScript for fast loading
@@ -154,7 +154,7 @@ The website is fully responsive and includes:
 - Smooth scrolling and animations
 - Progressive enhancement
 
-## 🤝 Contributing
+## Contributing
 
 This is a personal website, but suggestions for improvements are welcome:
 1. Fork the repository
@@ -162,17 +162,17 @@ This is a personal website, but suggestions for improvements are welcome:
 3. Make your changes
 4. Submit a pull request
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 📞 Contact
+## Contact
 
 - **GitHub**: [AdityaR-Bits](https://github.com/AdityaR-Bits)
 - **LinkedIn**: [Aditya Rustagi](https://www.linkedin.com/in/aditya-rustagi54/)
 - **Email**: Available through the contact form on the website
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Font Awesome for icons
 - Google Fonts for typography
@@ -181,6 +181,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Built with ❤️ by Aditya Rustagi**
+**Built by Aditya Rustagi**
 
 *MLOps Data Engineer @ CVS Health* # Tue Aug 19 21:45:24 CDT 2025
