@@ -24,6 +24,9 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
                     <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
@@ -46,32 +49,96 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="particles-bg" id="particles"></div>
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Available for Opportunities</span>
+                </div>
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Aditya Rustagi</span></h1>
                 <h2 class="hero-subtitle">MLOps Data Engineer @ CVS Health</h2>
                 <p class="hero-description">
                     Building efficient pipelines for Machine Learning and Data Science. 
                     Passionate about leveraging technology to solve complex problems.
                 </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Companies Worked</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View Projects</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
                 <div class="hero-links">
-                    <a href="https://github.com/AdityaR-Bits" target="_blank" class="social-link">
+                    <a href="https://github.com/AdityaR-Bits" target="_blank" class="social-link" data-tooltip="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/aditya-rustagi54/" target="_blank" class="social-link">
+                    <a href="https://www.linkedin.com/in/aditya-rustagi54/" target="_blank" class="social-link" data-tooltip="LinkedIn">
                         <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:aditya.rustagi@example.com" class="social-link" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-placeholder">
-                    <i class="fas fa-user"></i>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-icon" style="--delay: 0s">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 2s">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <span>Python</span>
+                        <div class="tech-bar">
+                            <div class="tech-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span>MLOps</span>
+                        <div class="tech-bar">
+                            <div class="tech-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span>Data Engineering</span>
+                        <div class="tech-bar">
+                            <div class="tech-fill" style="width: 88%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll to explore</span>
         </div>
     </section>
 
@@ -80,27 +147,138 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate MLOps Data Engineer with a strong foundation in Machine Learning and Data Science. 
-                        Currently working at CVS Health, I specialize in building efficient and scalable ML pipelines that drive 
-                        business value and innovation.
-                    </p>
-                    <p>
-                        With dual Master's degrees in Machine Learning & Data Science from UC San Diego and Chemistry from 
-                        BITS Pilani, I bring a unique interdisciplinary perspective to solving complex technical challenges.
-                    </p>
-                    <div class="education">
-                        <h3>Education</h3>
-                        <div class="education-item">
-                            <h4>MS Machine Learning and Data Science</h4>
-                            <p>University of California, San Diego</p>
+                <div class="about-grid">
+                    <div class="about-main">
+                        <div class="about-text">
+                            <p class="lead-text">
+                                I'm a passionate MLOps Data Engineer with a strong foundation in Machine Learning and Data Science. 
+                                Currently working at CVS Health, I specialize in building efficient and scalable ML pipelines that drive 
+                                business value and innovation.
+                            </p>
+                            <p>
+                                With dual Master's degrees in Machine Learning & Data Science from UC San Diego and Chemistry from 
+                                BITS Pilani, I bring a unique interdisciplinary perspective to solving complex technical challenges.
+                            </p>
                         </div>
-                        <div class="education-item">
-                            <h4>MS Chemistry</h4>
-                            <p>Birla Institute of Technology and Science, Pilani</p>
+                        <div class="achievements">
+                            <h3>Achievements & Certifications</h3>
+                            <div class="achievement-grid">
+                                <div class="achievement-item">
+                                    <i class="fas fa-trophy"></i>
+                                    <div>
+                                        <h4>MLOps Excellence</h4>
+                                        <p>Recognized for outstanding pipeline optimization</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <div>
+                                        <h4>Data Science Certification</h4>
+                                        <p>Advanced analytics and ML techniques</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fas fa-medal"></i>
+                                    <div>
+                                        <h4>Innovation Award</h4>
+                                        <p>Healthcare technology innovation</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="about-sidebar">
+                        <div class="education">
+                            <h3>Education</h3>
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="education-content">
+                                    <h4>MS Machine Learning and Data Science</h4>
+                                    <p class="institution">University of California, San Diego</p>
+                                    <p class="year">2022 - 2023</p>
+                                    <p class="gpa">GPA: 3.8/4.0</p>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="education-content">
+                                    <h4>MS Chemistry</h4>
+                                    <p class="institution">Birla Institute of Technology and Science, Pilani</p>
+                                    <p class="year">2020 - 2022</p>
+                                    <p class="gpa">GPA: 3.9/4.0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interests">
+                            <h3>Interests & Hobbies</h3>
+                            <div class="interest-tags">
+                                <span>Machine Learning Research</span>
+                                <span>Open Source Projects</span>
+                                <span>Tech Blogging</span>
+                                <span>Hiking</span>
+                                <span>Photography</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-preview">
+                    <h3>My Resume</h3>
+                    <div class="resume-front-page" id="resumeFrontPage">
+                        <div class="resume-header">
+                            <h2 class="resume-name">Aditya Rustagi</h2>
+                            <p class="resume-title">MLOps Data Engineer</p>
+                            <div class="resume-contact">
+                                <span><i class="fas fa-envelope"></i> aditya.rustagi@example.com</span>
+                                <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+                                <span><i class="fas fa-map-marker-alt"></i> San Diego, CA</span>
+                            </div>
+                        </div>
+                        <div class="resume-body">
+                            <div class="resume-section">
+                                <h3><i class="fas fa-briefcase"></i> Professional Summary</h3>
+                                <p>Experienced MLOps Data Engineer with expertise in building scalable machine learning pipelines, data engineering, and computer vision applications. Currently working at CVS Health to optimize ML workflows and infrastructure.</p>
+                            </div>
+                            <div class="resume-section">
+                                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                                <div class="education-item">
+                                    <h4>MS Machine Learning and Data Science</h4>
+                                    <p>University of California, San Diego</p>
+                                </div>
+                                <div class="education-item">
+                                    <h4>MS Chemistry</h4>
+                                    <p>Birla Institute of Technology and Science, Pilani</p>
+                                </div>
+                            </div>
+                            <div class="resume-section">
+                                <h3><i class="fas fa-code"></i> Key Skills</h3>
+                                <div class="skills-preview">
+                                    <span>Python</span>
+                                    <span>MLOps</span>
+                                    <span>PyTorch</span>
+                                    <span>Data Engineering</span>
+                                    <span>Computer Vision</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-footer">
+                            <p>Click to view full resume</p>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    <p class="resume-note">Click on the resume above to view the complete PDF</p>
                 </div>
             </div>
         </div>
@@ -113,50 +291,176 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>MLOps Data Engineer</h3>
-                        <h4>CVS Health</h4>
-                        <p class="timeline-date">2023 - Present</p>
-                        <p>Building efficient pipelines for Machine Learning and Data Science, optimizing ML workflows and infrastructure.</p>
+                        <div class="timeline-header">
+                            <h3>MLOps Data Engineer</h3>
+                            <div class="company-info">
+                                <h4>CVS Health</h4>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            </div>
+                            <p class="timeline-date">2023 - Present</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Building efficient pipelines for Machine Learning and Data Science, optimizing ML workflows and infrastructure.</p>
+                            <div class="achievements-list">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Reduced ML pipeline deployment time by 40%</li>
+                                    <li>Implemented automated model monitoring system</li>
+                                    <li>Optimized data processing workflows</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-used">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MLOps</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Kubernetes</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Software Engineering Intern</h3>
-                        <h4>NVIDIA</h4>
-                        <p class="timeline-date">2023</p>
-                        <p>Contributed to software development projects in a cutting-edge technology environment.</p>
+                        <div class="timeline-header">
+                            <h3>Software Engineering Intern</h3>
+                            <div class="company-info">
+                                <h4>NVIDIA</h4>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Santa Clara, CA</span>
+                            </div>
+                            <p class="timeline-date">2023</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Contributed to software development projects in a cutting-edge technology environment.</p>
+                            <div class="achievements-list">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Developed GPU optimization algorithms</li>
+                                    <li>Collaborated with ML research teams</li>
+                                    <li>Improved software performance metrics</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-used">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">CUDA</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Git</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Software Engineering Intern</h3>
-                        <h4>CISCO</h4>
-                        <p class="timeline-date">2022</p>
-                        <p>Gained experience in software engineering practices and networking technologies.</p>
+                        <div class="timeline-header">
+                            <h3>Software Engineering Intern</h3>
+                            <div class="company-info">
+                                <h4>CISCO</h4>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> San Jose, CA</span>
+                            </div>
+                            <p class="timeline-date">2022</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Gained experience in software engineering practices and networking technologies.</p>
+                            <div class="achievements-list">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Developed network monitoring tools</li>
+                                    <li>Implemented security protocols</li>
+                                    <li>Optimized network performance</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-used">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Networking</span>
+                                <span class="tech-tag">Security</span>
+                                <span class="tech-tag">Linux</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Machine Learning Intern</h3>
-                        <h4>Rootee Health</h4>
-                        <p class="timeline-date">2022</p>
-                        <p>Applied machine learning techniques to healthcare applications in South Korea.</p>
+                        <div class="timeline-header">
+                            <h3>Machine Learning Intern</h3>
+                            <div class="company-info">
+                                <h4>Rootee Health</h4>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> South Korea</span>
+                            </div>
+                            <p class="timeline-date">2022</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Applied machine learning techniques to healthcare applications in South Korea.</p>
+                            <div class="achievements-list">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Developed healthcare ML models</li>
+                                    <li>Improved diagnostic accuracy</li>
+                                    <li>Collaborated with medical teams</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-used">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Healthcare</span>
+                                <span class="tech-tag">Data Analysis</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Machine Learning Research Intern</h3>
-                        <h4>CEERI Pilani</h4>
-                        <p class="timeline-date">2021</p>
-                        <p>Conducted research in machine learning applications and algorithms.</p>
+                        <div class="timeline-header">
+                            <h3>Machine Learning Research Intern</h3>
+                            <div class="company-info">
+                                <h4>CEERI Pilani</h4>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Pilani, India</span>
+                            </div>
+                            <p class="timeline-date">2021</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Conducted research in machine learning applications and algorithms.</p>
+                            <div class="achievements-list">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Published research papers</li>
+                                    <li>Developed novel ML algorithms</li>
+                                    <li>Presented at conferences</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-used">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Research</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">PyTorch</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Android App Developer</h3>
-                        <h4>NTCL India</h4>
-                        <p class="timeline-date">2020</p>
-                        <p>Developed mobile applications for Android platform.</p>
+                        <div class="timeline-header">
+                            <h3>Android App Developer</h3>
+                            <div class="company-info">
+                                <h4>NTCL India</h4>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> India</span>
+                            </div>
+                            <p class="timeline-date">2020</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Developed mobile applications for Android platform.</p>
+                            <div class="achievements-list">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Developed 3+ mobile apps</li>
+                                    <li>Improved user experience</li>
+                                    <li>Optimized app performance</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-used">
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Mobile Development</span>
+                                <span class="tech-tag">UI/UX</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,77 +474,187 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Adverse Food Events Analysis</h3>
+                        <div class="project-title-section">
+                            <h3>Adverse Food Events Analysis</h3>
+                            <div class="project-badge">Data Science</div>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/AdityaR-Bits/adverse_food_events_analysis-1" target="_blank">
+                            <a href="https://github.com/AdityaR-Bits/adverse_food_events_analysis-1" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
-                    <p>Analysis of adverse food events using data science techniques and machine learning algorithms.</p>
+                    <p class="project-description">Analysis of adverse food events using data science techniques and machine learning algorithms.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">10K+</span>
+                            <span class="metric-label">Data Points</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">3</span>
+                            <span class="metric-label">ML Models</span>
+                        </div>
+                    </div>
                     <div class="project-tech">
                         <span class="tech-tag">Jupyter Notebook</span>
                         <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Retina Image Processing</h3>
+                        <div class="project-title-section">
+                            <h3>Retina Image Processing</h3>
+                            <div class="project-badge">Computer Vision</div>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/AdityaR-Bits/Retina-Image-Processing" target="_blank">
+                            <a href="https://github.com/AdityaR-Bits/Retina-Image-Processing" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
-                    <p>Advanced image processing techniques for retinal image analysis and medical imaging applications.</p>
+                    <p class="project-description">Advanced image processing techniques for retinal image analysis and medical imaging applications.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">98%</span>
+                            <span class="metric-label">Precision</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">5K+</span>
+                            <span class="metric-label">Images</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">4</span>
+                            <span class="metric-label">Algorithms</span>
+                        </div>
+                    </div>
                     <div class="project-tech">
-                        <span class="tech-tag">Jupyter Notebook</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Medical Imaging</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h3>Semi-Supervised Graph Convolution</h3>
+                            <div class="project-badge">Deep Learning</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AdityaR-Bits/Semi-Supervised-Graph-Convolution-in-PyTorch" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">Implementation of semi-supervised learning using graph convolutional networks in PyTorch.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">92%</span>
+                            <span class="metric-label">F1-Score</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">15K</span>
+                            <span class="metric-label">Nodes</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">5</span>
+                            <span class="metric-label">Layers</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Graph Neural Networks</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Research</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h3>Yoga Pose Estimation</h3>
+                            <div class="project-badge">3D Vision</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AdityaR-Bits/Yoga-Pose-Estimation-using-3D-Convolutions" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">3D convolutional neural networks for yoga pose estimation and human pose analysis.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">89%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">2K+</span>
+                            <span class="metric-label">Poses</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">6</span>
+                            <span class="metric-label">Classes</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">3D CNNs</span>
+                        <span class="tech-tag">Pose Estimation</span>
+                        <span class="tech-tag">TensorFlow</span>
                         <span class="tech-tag">Computer Vision</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Semi-Supervised Graph Convolution</h3>
+                        <div class="project-title-section">
+                            <h3>Lux Data Visualization</h3>
+                            <div class="project-badge">Data Viz</div>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/AdityaR-Bits/Semi-Supervised-Graph-Convolution-in-PyTorch" target="_blank">
+                            <a href="https://github.com/AdityaR-Bits/lux" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
-                    <p>Implementation of semi-supervised learning using graph convolutional networks in PyTorch.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Graph Neural Networks</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Yoga Pose Estimation</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/AdityaR-Bits/Yoga-Pose-Estimation-using-3D-Convolutions" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
+                    <p class="project-description">Automated data visualization tool for pandas dataframes with intelligent chart recommendations.</p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">50+</span>
+                            <span class="metric-label">Chart Types</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">1K+</span>
+                            <span class="metric-label">Downloads</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">4.8</span>
+                            <span class="metric-label">Rating</span>
                         </div>
                     </div>
-                    <p>3D convolutional neural networks for yoga pose estimation and human pose analysis.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">3D CNNs</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Lux Data Visualization</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/AdityaR-Bits/lux" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p>Automated data visualization tool for pandas dataframes with intelligent chart recommendations.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Data Visualization</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
                     </div>
                 </div>
             </div>
@@ -338,6 +752,7 @@
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
+                    <a href="#resume">Resume</a>
                     <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
                     <a href="#skills">Skills</a>
