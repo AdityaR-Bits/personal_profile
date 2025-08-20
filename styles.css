@@ -367,6 +367,22 @@ body {
     position: relative;
 }
 
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 20px 60px var(--shadow-heavy);
+    border: 6px solid var(--white);
+    transition: all 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 70px var(--shadow-heavy);
+}
+
 .profile-placeholder {
     width: 300px;
     height: 300px;
@@ -883,6 +899,11 @@ body {
         justify-content: center;
     }
     
+    .profile-picture {
+        width: 250px;
+        height: 250px;
+    }
+    
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -926,6 +947,11 @@ body {
     
     .hero-buttons {
         flex-direction: column;
+    }
+    
+    .profile-picture {
+        width: 200px;
+        height: 200px;
     }
     
     .section-title {
