@@ -226,12 +226,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Resume Functionality
     const resumeFrontPage = document.getElementById('resumeFrontPage');
+    const resumeSection = document.getElementById('resume');
+
+    console.log('Resume section found:', resumeSection);
+    console.log('Resume front page found:', resumeFrontPage);
 
     // Open PDF when resume front page is clicked
     if (resumeFrontPage) {
         resumeFrontPage.addEventListener('click', function() {
             // Open the PDF in a new tab
-            window.open('Aditya_Rustagi_Mach2.pdf', '_blank');
+            const pdfPath = './Aditya_Rustagi_Mach2.pdf';
+            console.log('Opening PDF:', pdfPath);
+            window.open(pdfPath, '_blank');
         });
     }
 
