@@ -432,6 +432,77 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Email Copy Functionality
+    function handleEmailClick(email) {
+        // Try to open email client first
+        const mailtoLink = `mailto:${email}`;
+        
+        try {
+            // Attempt to open email client
+            window.location.href = mailtoLink;
+            
+            // If email client opens, we don't need to copy
+            return;
+        } catch (error) {
+            // If email client fails, fall back to copying
+            copyEmailToClipboard(email);
+        }
+    }
+
+    function copyEmailToClipboard(email) {
+        // Use modern clipboard API if available
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(email).then(() => {
+                showEmailPopup();
+            }).catch(() => {
+                // Fallback for older browsers
+                fallbackCopyEmailToClipboard(email);
+            });
+        } else {
+            // Fallback for older browsers
+            fallbackCopyEmailToClipboard(email);
+        }
+    }
+
+    function fallbackCopyEmailToClipboard(email) {
+        const textArea = document.createElement("textarea");
+        textArea.value = email;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        textArea.style.top = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        
+        try {
+            document.execCommand('copy');
+            showEmailPopup();
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+        }
+        
+        document.body.removeChild(textArea);
+    }
+
+    function showEmailPopup() {
+        const popup = document.getElementById('emailPopup');
+        popup.classList.add('show');
+        
+        // Hide popup after 3 seconds
+        setTimeout(() => {
+            popup.classList.remove('show');
+        }, 3000);
+    }
+
+    // Add click event to email links
+    document.querySelectorAll('.email-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const email = this.getAttribute('data-email');
+            handleEmailClick(email);
+        });
+    });
+
     // EmailJS Contact Form Functionality
     (function() {
         // Initialize EmailJS with your public key
