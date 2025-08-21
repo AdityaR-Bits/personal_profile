@@ -693,7 +693,7 @@ body {
 
 /* Resume Section */
 .resume {
-    padding: 40px 0;
+    padding: 30px 0;
     background: #f8fafc;
     min-height: auto;
     display: block;
@@ -712,7 +712,7 @@ body {
 
 .resume-preview {
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -731,16 +731,16 @@ body {
     display: block;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    max-width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 120px;
     margin: 0 auto;
 }
 
 .resume-image-link:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .resume-image {
