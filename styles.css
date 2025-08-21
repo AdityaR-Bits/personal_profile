@@ -693,9 +693,9 @@ body {
 
 /* Resume Section */
 .resume {
-    padding: 60px 0;
+    padding: 40px 0;
     background: #f8fafc;
-    min-height: 100vh;
+    min-height: auto;
     display: block;
     position: relative;
     z-index: 10;
@@ -705,14 +705,14 @@ body {
 .resume-content {
     display: flex;
     justify-content: center;
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .resume-preview {
     background: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -722,8 +722,8 @@ body {
 
 .resume-preview h3 {
     color: #1e293b;
-    margin-bottom: 1.5rem;
-    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -734,7 +734,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    max-width: 400px;
+    max-width: 250px;
     margin: 0 auto;
 }
 
@@ -774,7 +774,7 @@ body {
     color: #64748b;
     font-size: 0.9rem;
     font-style: italic;
-    margin: 1rem 0 0 0;
+    margin: 0.5rem 0 0 0;
 }
 
 .resume-actions {
