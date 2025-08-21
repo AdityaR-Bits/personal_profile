@@ -59,7 +59,7 @@ personal_profile/
 - Programming languages (Python, C++, Go, MATLAB, Arduino)
 - Machine Learning frameworks (PyTorch, TensorFlow)
 - Tools and technologies (Git, Linux, Firebase, Android)
-- Areas of expertise (MLOps, Data Engineering, Computer Vision)
+- Areas of expertise (Machine Learning, Data Engineering, Computer Vision)
 
 ### 6. Contact Section
 - Contact form with validation
@@ -183,4 +183,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Built by Aditya Rustagi**
 
-*MLOps Data Engineer @ CVS Health* # Tue Aug 19 21:45:24 CDT 2025
+*Machine Learning Engineer @ CVS Health* # Tue Aug 19 21:45:24 CDT 2025
