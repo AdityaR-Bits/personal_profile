@@ -431,4 +431,73 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.background = 'transparent';
         });
     });
+
+    // EmailJS Contact Form Functionality
+    (function() {
+        // Initialize EmailJS with your public key
+        emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your actual public key
+        
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoading = submitBtn.querySelector('.btn-loading');
+        const formMessage = document.getElementById('formMessage');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                btnText.classList.add('hide');
+                btnLoading.classList.add('show');
+                submitBtn.disabled = true;
+                
+                // Hide any previous messages
+                formMessage.style.display = 'none';
+                
+                // Get form data
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    subject: document.getElementById('subject').value,
+                    message: document.getElementById('message').value
+                };
+                
+                // Send email using EmailJS
+                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message,
+                    to_name: 'Aditya Rustagi'
+                })
+                .then(function(response) {
+                    // Success
+                    formMessage.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+                    formMessage.className = 'form-message success';
+                    formMessage.style.display = 'block';
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                    }, 5000);
+                })
+                .catch(function(error) {
+                    // Error
+                    formMessage.textContent = 'Sorry, there was an error sending your message. Please try again or contact me directly via email.';
+                    formMessage.className = 'form-message error';
+                    formMessage.style.display = 'block';
+                })
+                .finally(function() {
+                    // Reset button state
+                    btnText.classList.remove('hide');
+                    btnLoading.classList.remove('show');
+                    submitBtn.disabled = false;
+                });
+            });
+        }
+    })();
 }); 
