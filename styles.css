@@ -1219,6 +1219,17 @@ body {
     font-weight: 500;
 }
 
+.certification-id {
+    color: #800020;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #fdf2f2;
+    padding: 0.2rem 0.6rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 0.3rem;
+}
+
 .certification-body p {
     color: #64748b;
     margin-bottom: 1.5rem;
@@ -1247,6 +1258,73 @@ body {
     background: #800020;
     color: white;
     transform: translateY(-2px);
+}
+
+.certification-actions {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.btn-credential {
+    background: linear-gradient(135deg, #800020, #a0522d);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-credential:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(128, 0, 32, 0.3);
+    color: white;
+}
+
+.certifications-note {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.certifications-note p {
+    color: #64748b;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.certifications-note p:last-child {
+    margin-bottom: 0;
+}
+
+.certifications-note i {
+    color: #800020;
+    font-size: 1rem;
+}
+
+.linkedin-link {
+    color: #800020;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+    color: #600018;
+    text-decoration: underline;
 }
 
 /* Projects Section */
@@ -1659,6 +1737,17 @@ body {
 
     .certification-icon {
         margin: 0 auto;
+    }
+
+    .certifications-note {
+        margin: 2rem 1rem 0 1rem;
+        padding: 1.5rem;
+    }
+
+    .certifications-note p {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
     }
 
     .contact-content {
