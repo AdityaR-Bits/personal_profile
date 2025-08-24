@@ -38,9 +38,7 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-tab="skills">Skills</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" data-tab="contact">Contact</a>
-                </li>
+
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -80,7 +78,7 @@
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary" data-tab="contact">
+                    <a href="#contact" class="btn btn-primary">
                         <span>Get In Touch</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -121,6 +119,53 @@
 
             </div>
         </div>
+        
+        <!-- Contact Section in Home Tab -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in new opportunities, collaborations, and interesting projects. Feel free to reach out!</p>
+                        <div class="contact-links">
+                            <a href="https://github.com/AdityaR-Bits" target="_blank" class="contact-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aditya-rustagi54/" target="_blank" class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                </span>
+                            </button>
+                        </form>
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
             <span>Scroll to explore</span>
@@ -859,53 +904,7 @@
     </section>
         </div>
 
-        <!-- Contact Tab -->
-        <div class="tab-pane" id="contact-tab">
-            <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in new opportunities, collaborations, and interesting projects. Feel free to reach out!</p>
-                    <div class="contact-links">
-                        <a href="https://github.com/AdityaR-Bits" target="_blank" class="contact-link">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/aditya-rustagi54/" target="_blank" class="contact-link">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" id="submitBtn">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-loading" style="display: none;">
-                                <i class="fas fa-spinner fa-spin"></i> Sending...
-                            </span>
-                        </button>
-                    </form>
-                    <div id="formMessage" class="form-message" style="display: none;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-        </div>
+
     </div>
 
     <!-- Footer -->
@@ -920,7 +919,7 @@
                     <a href="#" data-tab="experience">Experience</a>
                     <a href="#" data-tab="projects">Projects</a>
                     <a href="#" data-tab="skills">Skills</a>
-                    <a href="#" data-tab="contact">Contact</a>
+
                 </div>
             </div>
         </div>
