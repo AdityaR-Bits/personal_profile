@@ -13,17 +13,51 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     navMenu.classList.remove('active');
 }));
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+// Tab switching functionality
+function switchTab(targetTab) {
+    // Remove active class from all nav links
+    document.querySelectorAll('.nav-link').forEach(n => n.classList.remove('active'));
+    
+    // Add active class to target nav link
+    const targetNavLink = document.querySelector(`[data-tab="${targetTab}"]`);
+    if (targetNavLink) {
+        targetNavLink.classList.add('active');
+    }
+    
+    // Hide all tab panes
+    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    // Show the target tab pane
+    const targetPane = document.getElementById(targetTab + '-tab');
+    if (targetPane) {
+        targetPane.classList.add('active');
+    }
+}
+
+// Navigation tab switching
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        const targetTab = link.getAttribute('data-tab');
+        switchTab(targetTab);
+    });
+});
+
+// Footer tab switching
+document.querySelectorAll('.footer-links a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetTab = link.getAttribute('data-tab');
+        switchTab(targetTab);
+    });
+});
+
+// Hero button tab switching
+document.querySelectorAll('.hero-buttons a[data-tab]').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetTab = button.getAttribute('data-tab');
+        switchTab(targetTab);
     });
 });
 
