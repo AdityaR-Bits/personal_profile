@@ -1424,8 +1424,8 @@ body {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
     max-width: 800px;
     margin: 0 auto;
@@ -1466,6 +1466,8 @@ body {
     background: #fdf2f2;
     padding: 1.5rem;
     border-radius: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .form-group {
@@ -1481,6 +1483,9 @@ body {
     font-size: 0.95rem;
     transition: border-color 0.3s ease;
     font-family: inherit;
+    background: white;
+    cursor: text;
+    pointer-events: auto;
 }
 
 .form-group input:focus,
