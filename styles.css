@@ -132,7 +132,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 100px 0 60px;
+    padding: 120px 0 80px;
     background: linear-gradient(135deg, #fdf2f2 0%, #fce7e7 100%);
     min-height: 90vh;
     display: flex;
@@ -174,10 +174,14 @@ body {
     box-shadow: 0 4px 15px rgba(128, 0, 32, 0.3);
 }
 
+.hero-header {
+    margin-bottom: 2.5rem;
+}
+
 .hero-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     line-height: 1.2;
 }
 
@@ -226,10 +230,16 @@ body {
     font-weight: 500;
 }
 
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .hero-buttons {
     display: flex;
-    gap: 0.8rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 0;
 }
 
 .btn {
@@ -443,13 +453,23 @@ body {
 }
 
 /* Section Styles */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .section-title {
     font-size: 2.2rem;
     font-weight: 700;
-    text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
     color: #1e293b;
     position: relative;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    font-weight: 400;
 }
 
 .section-title::after {
@@ -472,25 +492,51 @@ body {
 
 /* About Section on Home Page - Single Column Layout */
 #about-home .about-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-}
-
-#about-home .about-main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 }
 
 #about-home .about-text {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#about-home .achievements,
-#about-home .education,
-#about-home .interests {
-    margin-bottom: 2rem;
+#about-home .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#about-home .about-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(128, 0, 32, 0.1);
+    transition: all 0.3s ease;
+}
+
+#about-home .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+#about-home .about-card h3 {
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#about-home .about-card h3 i {
+    color: #800020;
+    font-size: 1.2rem;
 }
 
 .about-content {
@@ -1447,17 +1493,35 @@ body {
 }
 
 .contact-content {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 }
 
 .contact-info h3 {
     color: #1e293b;
     margin-bottom: 0.8rem;
     font-size: 1.3rem;
+}
+
+.contact-header {
+    margin-bottom: 2rem;
+}
+
+.contact-header h3 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .contact-info p {
@@ -1486,11 +1550,32 @@ body {
 }
 
 .contact-form {
-    background: #fdf2f2;
-    padding: 1.5rem;
-    border-radius: 10px;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
     position: relative;
     z-index: 1;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(128, 0, 32, 0.1);
+}
+
+.contact-form h3 {
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form-group {
