@@ -1873,6 +1873,244 @@ body {
     }
 }
 
+/* Home Content Single Section Styles */
+.home-content {
+    padding: 60px 0;
+    background: white;
+}
+
+.content-section {
+    margin-bottom: 4rem;
+    padding: 0;
+}
+
+.content-section:last-child {
+    margin-bottom: 0;
+}
+
+.content-title {
+    color: #1e293b;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.content-text {
+    color: #475569;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+}
+
+.content-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Achievements List Styles */
+.achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    border-left: 4px solid #800020;
+}
+
+.achievement-item i {
+    color: #800020;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.achievement-item h4 {
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.achievement-item p {
+    color: #64748b;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Education List Styles */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+}
+
+.education-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    border-left: 4px solid #800020;
+}
+
+.education-item .education-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #800020, #a0522d);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.education-item .education-details h4 {
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.education-item .education-details .institution {
+    color: #800020;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.education-item .education-details .year {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Interest Tags Styles */
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    max-width: 800px;
+}
+
+.interest-tags span {
+    background: #800020;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.interest-tags span:hover {
+    background: #a0522d;
+    transform: translateY(-2px);
+}
+
+/* Contact Content Styles for Single Section */
+.home-content .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.home-content .contact-info h3 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.home-content .contact-info p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.home-content .contact-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.home-content .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #800020;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.home-content .contact-link:hover {
+    color: #a0522d;
+}
+
+.home-content .contact-form {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(128, 0, 32, 0.1);
+}
+
+.home-content .contact-form h3 {
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* Responsive Design for Single Section */
+@media (max-width: 768px) {
+    .home-content {
+        padding: 40px 0;
+    }
+    
+    .content-section {
+        margin-bottom: 3rem;
+    }
+    
+    .content-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .content-text {
+        font-size: 1rem;
+    }
+    
+    .achievement-item,
+    .education-item {
+        padding: 1.2rem;
+    }
+    
+    .home-content .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .interest-tags {
+        gap: 0.6rem;
+    }
+    
+    .interest-tags span {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
 /* Education Section Styles */
 .education {
     padding: 80px 0;
