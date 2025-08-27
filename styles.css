@@ -492,6 +492,113 @@ body {
     background: white;
 }
 
+/* About Grid Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-sidebar {
+    background: #f8fafc;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 0, 32, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 2rem;
+}
+
+/* Achievements Highlight */
+.achievements-highlight {
+    background: linear-gradient(135deg, #800020, #a0522d);
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+}
+
+.achievements-highlight h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 0 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.achievements-highlight i {
+    font-size: 1.2rem;
+}
+
+.achievements-highlight p {
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Education Summary */
+.education-summary h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #1e293b;
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.education-summary i {
+    color: #800020;
+    font-size: 1.3rem;
+}
+
+.education-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.education-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    border-left: 4px solid #800020;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h4 {
+    color: #1e293b;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.education-item .institution {
+    color: #800020;
+    font-weight: 500;
+    margin: 0 0 0.3rem 0;
+    font-size: 1rem;
+}
+
+.education-item .year {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
 /* About Section on Home Page - Single Column Layout */
 #about-home .about-content {
     max-width: 1000px;
@@ -2471,6 +2578,17 @@ body {
     .content-section .section-title {
         font-size: 2rem;
         margin-bottom: 2rem;
+    }
+    
+    /* About Grid Mobile Layout */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-sidebar {
+        position: static;
+        order: -1;
     }
     
     .achievement-card,
