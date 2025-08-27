@@ -1932,7 +1932,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .hero-background {
@@ -1942,24 +1942,35 @@ body {
 }
 
 .hero-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
     z-index: 2;
+    width: 100%;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+.hero-header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 4rem;
     align-items: center;
-    min-height: 80vh;
-    max-width: 1400px;
-    margin: 0 auto;
+    min-height: 60vh;
 }
 
-.hero-text {
+.hero-info {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -1967,11 +1978,11 @@ body {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 800;
     color: #1e293b;
     line-height: 1.1;
-    margin: 0;
+    margin: 0 0 1rem 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -1984,19 +1995,19 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #64748b;
     font-weight: 600;
-    margin: 0;
+    margin: 0 0 1.5rem 0;
     letter-spacing: 0.5px;
 }
 
 .hero-description {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #475569;
     line-height: 1.7;
-    margin: 0;
-    max-width: 550px;
+    margin: 0 auto;
+    max-width: 700px;
     font-weight: 500;
 }
 
@@ -2004,18 +2015,21 @@ body {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 1rem;
 }
 
 .hero-stats {
     display: flex;
     gap: 3rem;
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 2rem auto 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
 }
 
 .stat-item {
@@ -2039,6 +2053,7 @@ body {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 .hero-visual {
@@ -2050,8 +2065,8 @@ body {
 }
 
 .profile-image {
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
@@ -2059,6 +2074,7 @@ body {
     position: relative;
     z-index: 2;
     transition: all 0.3s ease;
+    margin: 0 auto;
 }
 
 .profile-image:hover {
@@ -2377,7 +2393,21 @@ body {
     }
     
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .hero-description {
+        font-size: 1.3rem;
+        max-width: 600px;
+    }
+    
+    .profile-image {
+        width: 300px;
+        height: 300px;
     }
     
     .achievements-grid,
