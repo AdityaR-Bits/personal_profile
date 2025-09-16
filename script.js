@@ -332,13 +332,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 20);
     }
 
+    function animateCounterWithSuffix(element, target, prefix, suffix) {
+        let current = 0;
+        const increment = target / 100;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            element.textContent = prefix + current.toFixed(1) + suffix;
+        }, 20);
+    }
+
     // Animate stats when they come into view
     const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const statNumber = entry.target.querySelector('.stat-number');
-                const target = parseInt(statNumber.getAttribute('data-target'));
-                animateCounter(statNumber, target);
+                const target = parseFloat(statNumber.getAttribute('data-target'));
+                const label = entry.target.querySelector('.stat-label').textContent;
+                
+                // Handle special cases for different stat types
+                if (label === 'Cost Savings') {
+                    animateCounterWithSuffix(statNumber, target, '$', 'M');
+                } else {
+                    animateCounter(statNumber, target);
+                }
                 statsObserver.unobserve(entry.target);
             }
         });
