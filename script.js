@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Hero button tab switching
-    const heroButtons = document.querySelectorAll('.hero-buttons a[data-tab]');
+    const heroButtons = document.querySelectorAll('.hero-actions a[data-tab]');
     console.log('Found hero buttons:', heroButtons.length);
     
     heroButtons.forEach(button => {
@@ -85,6 +85,19 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetTab = button.getAttribute('data-tab');
             console.log('Hero button clicked:', targetTab);
+            switchTab(targetTab);
+        });
+    });
+
+    // Skills CTA button tab switching
+    const skillsButtons = document.querySelectorAll('.skills-cta a[data-tab]');
+    console.log('Found skills buttons:', skillsButtons.length);
+    
+    skillsButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetTab = button.getAttribute('data-tab');
+            console.log('Skills button clicked:', targetTab);
             switchTab(targetTab);
         });
     });
