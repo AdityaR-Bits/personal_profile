@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const resumeFrontPage = document.getElementById('resumeFrontPage');
     if (resumeFrontPage) {
         resumeFrontPage.addEventListener('click', () => {
-            window.open('./Aditya_Rustagi_Mach2.pdf', '_blank');
+            window.open('./Aditya_Rustagi_Mach2.pdf?v=20260627', '_blank');
         });
     }
 
